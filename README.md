@@ -16,3 +16,14 @@ sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
 ```shell
 gcloud container clusters get-credentials {var.cluster_name} --region {var.region} --project {var.project_id}
 ```
+
+---
+
+### terraform.tfvars 내용
+
+```txt
+project_id = ${프로젝트 id}
+
+db_username = ${DB 사용자 이름}
+db_password = ${DB 사용자 비밀번호}
+```
